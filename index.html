@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>!!Asteroid Game!!</title>
+    <style>
+    canvas {
+      border: 10px solid #ccc;
+    }
+    </style>
+    <script src="keymaster.js"></script>
+    <script src="inherits.js"></script>
+    <script src="moving_object.js"></script>
+    <script src="asteroid.js"></script>
+    <script src="bullet.js"></script>
+    <script src="ship.js"></script>
+    <script src="game.js"></script>
+    <canvas width="700" height="700"></canvas>
+
+    <script>
+        var canvas = document.getElementsByTagName("canvas")[0];
+        var ctx = canvas.getContext("2d");
+        var asteroidsGame = new Asteroids.Game(canvas.getContext("2d"));
+        asteroidsGame.start();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
